@@ -6,10 +6,10 @@ This guide walks you through different ways to get your Next.js application onli
 
 Below are three common hosting strategies. Each section is collapsible—simply click on the option name to see its full details.
 
-You can adapt the provided `compose/allservices.compose.yml` file to fit the needs of the options described below.
+You can adapt the provided [`compose.yml`](./compose.yml) file to fit the needs of the options described below.
 
 <details>
-<summary><b>Option 1: All-in-One Server Hosting</b></summary>
+<summary><b>Option 1: Hosting on a single server</b></summary>
 
 This is the simplest approach, where everything your app needs (the website, database, and content management system) runs on a single machine.
 
@@ -30,8 +30,8 @@ This is the simplest approach, where everything your app needs (the website, dat
 ### Summary
 
 *   **Advantages**: Simple to understand and set up; generally the lowest cost.
-*   **Disadvantages**: Cannot easily handle very large amounts of traffic; if the server has a problem, your website goes down. You must manually back up your database.
-*   **Best For**: Websites with low to moderate traffic (e.g., under 30,000 visits per month).
+*   **Disadvantages**: Cannot easily handle very large amounts of traffic; Your app is shortly down when you update the code. You must manually back up your database.
+*   **Best For**: Websites with low to moderate traffic (e.g., under 10,000 visits per month).
 
 </details>
 
@@ -43,13 +43,13 @@ This approach adds scalability by moving some components to managed cloud servic
 ### What This Includes
 
 You separate your services:
-*   The **Next.js app** and **Payload CMS** are hosted on your own servers.
 *   The **Database** is moved to a managed cloud service (e.g., a platform like Prisma Data Platform).
+*   Optionally, the **Next.js app** and **Payload CMS** are hosted on your own servers.
 
 ### How to Set It Up
 
 The setup is similar to Option 1, but with a key difference:
-1.  **Use a Managed Database**: Sign up for a cloud database service. You will get a connection string (a web address) for your database.
+1.  **Use a Managed Database**: Sign up for a cloud database service (e.g. prisma.io). You will get a connection string (a web address) for your database.
 2.  **Update Configuration**: In your app and CMS configuration, replace the local database connection details with the new connection string from your managed provider.
 3.  **Deploy App and CMS**: Follow the deployment steps from Option 1, but your app will now connect to the external database.
 
@@ -61,14 +61,14 @@ The setup is similar to Option 1, but with a key difference:
 </details>
 
 <details>
-<summary><b>Option 3: Fully Serverless Hosting</b></summary>
+<summary><b>Option 3: Fully Managed Hosting</b></summary>
 
 This modern approach aims for maximum scalability by hosting all components—the app, CMS, and database—on "serverless" or managed platforms.
 
 ### What This Includes
 
 *   **Managed Database**: A cloud database service (e.g., Prisma Data Platform).
-*   **Serverless Hosting**: Platforms like Vercel, Netlify, or Replit to host your Next.js app and Payload CMS. These platforms automatically adjust capacity based on traffic.
+*   **Serverless Hosting**: Platforms like Replit, Runpod, Azure Functions to host your Next.js app and Payload CMS. These platforms automatically adjust capacity based on traffic.
 
 ### How to Set It Up
 
