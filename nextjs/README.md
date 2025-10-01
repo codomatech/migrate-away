@@ -10,7 +10,7 @@ To host your app, you need to manage:
 
 ## Application Hosting
 
-Below are three common hosting strategies. Each section is collapsible—simply click on the option name to see its full details.
+Below are three common hosting strategies. Each section is collapsible: simply click on the option name to see its full details.
 
 
 <details>
@@ -70,7 +70,7 @@ The setup is similar to Option 1, but with a key difference:
 <details>
 <summary><b>Option 3: Fully Managed Hosting</b></summary>
 
-This modern approach aims for maximum scalability by hosting all components—the app, CMS, and database—on "serverless" or managed platforms.
+This modern approach aims for maximum scalability by hosting all components (the app, CMS, and database) on "serverless" or managed platforms.
 
 ### What This Includes
 
