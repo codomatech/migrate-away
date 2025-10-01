@@ -1,8 +1,14 @@
 # A Practical Guide to Hosting Your Next.js App
 
-This guide walks you through different ways to get your Next.js application online. The goal is to help you choose a hosting strategy that balances performance, flexibility, and cost, without being tied to a single provider.
+This guide walks you through different ways to get your Next.js application online. The goal is to help you choose a hosting strategy that balances performance, flexibility, and cost, without being locked in with a single provider.
 
-## 🚀 How to Use This Guide
+To host your app, you need to manage:
+
+- Application Hosting
+- CDN
+- DNS
+
+## Application Hosting
 
 Below are three common hosting strategies. Each section is collapsible—simply click on the option name to see its full details.
 
