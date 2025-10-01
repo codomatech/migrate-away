@@ -12,7 +12,6 @@ To host your app, you need to manage:
 
 Below are three common hosting strategies. Each section is collapsible—simply click on the option name to see its full details.
 
-You can adapt the provided [`compose.yml`](./compose.yml) file to fit the needs of the options described below.
 
 <details>
 <summary><b>Option 1: Hosting on a single server</b></summary>
@@ -24,6 +23,8 @@ This is the simplest approach, where everything your app needs (the website, dat
 *   **A Next.js App**: You can use the provided example app (based on a feature-rich [boilerplate](https://github.com/ixartz/Next-js-Boilerplate)) or replace it with your own.
 *   **A Database**: Choose between PostgreSQL or MySQL.
 *   **Payload CMS**: A system for managing your website's content.
+
+You can adapt the provided [`compose.yml`](./compose.yml) file to fit the needs of the options described below.
 
 ### How to Set It Up
 
