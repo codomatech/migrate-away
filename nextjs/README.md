@@ -5,8 +5,8 @@ This guide walks you through different ways to get your Next.js application onli
 To host your app, you need to manage:
 
 - Application Hosting
-- CDN
 - DNS
+- CDN
 
 ## Application Hosting
 
@@ -90,3 +90,12 @@ This process varies by platform but generally involves:
 *   **Disadvantages**: Can involve multiple services and subscriptions; may require more complex configuration.
 
 </details>
+
+## DNS Management
+
+(Coming soon)
+
+## CDN
+
+(Coming soon)
+
